@@ -59,9 +59,15 @@ body {
     border: 1px solid #4d90fe !important;
     outline: solid #4d90fe !important;
   }
+  .main-heading, .navbar-brand, .nav-link{
+    font-family: "Bookman Old Style", serif;
+    font-weight: 500;
+    font-style: italic;
+  }
   .image-containers {
     aspect-ratio: 2.23/3;
-    width: 18rem;
+    /* width: 18rem; */
+    width: 100%;
     border-radius: 1rem;
     overflow: hidden;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -90,7 +96,6 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     gap: 1rem;
-    justify-items: center;
   }
   .placeholder {
     background-color: #e0e0e0;
@@ -104,4 +109,14 @@ body {
     0% { opacity: 1; }
     50% { opacity: 0.5; }
     100% { opacity: 1; }
+  }
+  @media (max-width: 768px) {
+    .images {
+      justify-items: center;
+    }
+  }
+  @media (min-width: 768px) {
+    .image-containers {
+      width: 18rem !important;
+    }
   }
