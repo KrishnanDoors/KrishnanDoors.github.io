@@ -120,3 +120,16 @@ body {
       width: 18rem !important;
     }
   }
+  @media (min-width: 1921px) {    
+    .image-containers {
+      width: 35rem !important;
+      border-radius: 3rem;
+    }
+    .images {
+      width: 90vw;
+      margin-inline: 5vw;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+      gap: 3rem;
+    }
+  }
