@@ -110,12 +110,12 @@ body {
     50% { opacity: 0.5; }
     100% { opacity: 1; }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 996px) {
     .images {
       justify-items: center;
     }
   }
-  @media (min-width: 768px) {
+  @media (min-width: 996px) {
     .image-containers {
       width: 18rem !important;
     }
