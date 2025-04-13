@@ -1,7 +1,6 @@
 const imageSerials = [
-  "vmk01", "vmk02", "vmk03", "vmk04", "vmk05", "vmk06", "vmk07", "vmk08", "vmk09",
-  "vmk10", "vmk11", "vmk12", "vmk13", "vmk14", "vmk15", "vmk16", "vmk17", "vmk18", "vmk19",
-  "vmk101", "vmk102", "vmk103", "vmk104", "vmk105", "vmk106", "vmk107", "vmk108", "vmk109"
+  ...Array.from({ length: 19 }, (_, i) => `vmk${String(i + 1).padStart(2, '0')}`),
+  ...Array.from({ length: 9 }, (_, i) => `vmk10${i + 1}`)
 ];
 
 function normalizeInput(input) {
